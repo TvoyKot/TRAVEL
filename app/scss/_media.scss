@@ -1,0 +1,25 @@
+@media (max-width: 970px) {
+    .header {
+        &__content-title {
+            font-size: 45px;
+            line-height: 55px;
+        }
+    }
+}
+@media (max-width: 705px) {
+    .header {
+        &__content-title {
+            font-size: 35px;
+            line-height: 45px;
+        }
+        &__search {
+            display: none;
+        }
+    }
+    .menu {
+        display: none;
+    }
+    .menu-btn {
+        display: block;
+    }
+}

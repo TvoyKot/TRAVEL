@@ -4,25 +4,32 @@ body {
   scroll-behavior: smooth;
 }
 
-// body {
-  // display: flex;
-  // flex-direction: column;
-//   @extend %ubuntu-light;
-//   color: #fff;
-//   font-size: 17px;
-//   line-height: 21px;
-//   overflow-x: hidden;
-//   overflow-y: scroll;
-//   position: relative;
-// }
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
 
 .main {
   flex: 1 0 auto;
+  background-color: #000;
 }
 
 .container {
-  max-width: 1270px;
+  max-width: 1490px;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
+}
+
+section {
+  background-color: #000;
 }
 
