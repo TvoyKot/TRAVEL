@@ -1,3 +1,35 @@
+@media (max-width: 1280px) {
+    .holiday {
+        margin-bottom: 150px;
+
+        &__inner {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+    .culture {
+        &__inner {
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+}
+@media (max-width: 1230px) {
+    .footer {
+        &__content {
+            flex-direction: column;
+        }
+        &__content-box {
+            gap: 85px;
+        }
+        &__form {
+            max-width: 650px;
+        }
+        &__form-btn {
+            bottom: 50px;
+        }
+    }
+}
 @media (max-width: 970px) {
     .header {
         &__content-title {
@@ -6,20 +38,247 @@
         }
     }
 }
+
+@media (max-width: 760px) {
+    .slider {
+        &__item-title {
+            font-size: 36px;
+            max-width: 350px;
+        }
+    }
+    .article-slider__arrow {
+        display: none;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
 @media (max-width: 705px) {
     .header {
         &__content-title {
             font-size: 35px;
             line-height: 45px;
         }
+
         &__search {
             display: none;
         }
     }
+
     .menu {
         display: none;
     }
+
     .menu-btn {
         display: block;
+    }
+
+    .menu-phone.active {
+        display: block;
+        transform: translateX(0%);
+        transition: all .5s ease-in-out;
+    }
+
+    .menu-btn.active {
+        & span:nth-child(1) {
+            transform: rotate(-45deg);
+        }
+
+        & span:nth-child(2) {
+            transform: translateX(5px);
+        }
+
+        & span:nth-child(3) {
+            transform: rotate(45deg);
+        }
+    }
+    .culture {
+        &__box-title {
+            font-size: 45px;
+            line-height: 55px;
+        }
+    }
+    .footer {
+        &__top {
+            flex-wrap: wrap;
+        }
+        &__top-box {
+            flex-direction: column;
+        }
+        &__form-title {
+            font-size: 25px;
+        }
+        &__form-btn {
+            bottom: 61px;
+        }
+    }
+}
+@media (max-width: 620px) {
+    .footer {
+        &__content-box {
+            margin-right: 0;
+            gap: 35px;
+        }
+    }
+}
+@media (max-width: 610px) {
+    .holiday {
+        margin-bottom: 100px;
+
+        &__box-title {
+            font-size: 30px;
+        }
+    }
+    .slider {
+        margin-bottom: 100px;
+    }
+    .culture {
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 575px) {
+    .footer {
+        &__bottom {
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+        &__copy {
+            margin-bottom: 50px;
+        }
+    }
+}
+@media (max-width: 560px) {
+    .header {
+        &__content-subtitle {
+            padding-left: 40px;
+            font-size: 14px;
+
+            &::before {
+                width: 32px;
+            }
+        }
+
+        &__content-title {
+            font-size: 25px;
+            line-height: 35px;
+        }
+
+        &__search {
+            display: none;
+        }
+    }
+}
+@media (max-width: 490px) {
+    .footer {
+        &__form-btn {
+            position: static;
+            margin-top: 8px;
+        }
+    }
+}
+@media (max-width: 475px) {
+    .footer {
+        &__form {
+            margin-bottom: 20px;
+        }
+        &__form-title {
+            font-size: 20px;
+        }
+        &__form-input {
+            margin-bottom: 10px;
+        }
+        &__form-btn {
+            bottom: 50px;
+        }
+        &__bottom-link {
+            font-size: 14px;
+            margin: 0 10px;
+        }
+    }
+}
+@media (max-width: 430px) {
+    .footer {
+        &__form {
+            margin-bottom: 35px;
+        }
+        &__content-box {
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .header {
+        &__content-title {
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    .holiday {
+        margin-bottom: 50px;
+
+        &__box-subtitle {
+            font-size: 16px;
+            padding-left: 40px;
+
+            &::before {
+                width: 32px;
+            }
+        }
+
+        &__box-title {
+            font-size: 25px;
+        }
+    }
+
+    .slider {
+        &__item-title {
+            font-size: 25px;
+            max-width: 310px;
+        }
+
+        &__item-subtitle::before {
+            width: 50px;
+            left: -70px;
+        }
+        &__item-subtitle::after {
+            width: 50px;
+            right: -70px;
+        }
+        &__item-text {
+            margin-bottom: 15px;
+        }
+        &__item-link {
+            margin-bottom: 10px;
+        }
+        & .article-slider__arrow {
+            display: none;
+        }
+    }
+    .culture {
+        &__box-subtitle {
+            padding-left: 50px;
+            &::before {
+                width: 40px;
+            }
+        }
+        &__box-title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+        &__box-link {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .footer {
+        &__form-title {
+            font-size: 18px;
+        }
     }
 }
